@@ -86,7 +86,7 @@ def _(mo):
     import sys
     from pathlib import Path
 
-    sys.path.insert(0, str(Path(mo.notebook_dir()).parent.parent))
+    sys.path.insert(0, str(Path(mo.notebook_dir()).parent))
     from helpers import nb, ui
 
     CFG = nb.bootstrap()
